@@ -1,52 +1,68 @@
-COVID-19 India Statewise Analysis Dashboard
-📌 Overview
-This Tableau dashboard provides a statewise analysis of COVID-19 cases in India, offering insights into confirmed cases, recoveries, deaths, and trends over time.
+# COVID-19 Dashboard in Tableau
 
-🔗 Tableau Public Dashboard
-🔗 View the Live Dashboard
+## 🏥 Overview
+This project demonstrates the **step-by-step process** of creating a **COVID-19 dashboard** in Tableau using real-world data. The dashboard provides insights into **state-wise COVID-19 cases, trends, comparisons, and key metrics**.
 
-📊 Features of the Dashboard
-✅ Interactive Map: Visualizes the spread of COVID-19 across Indian states.
-✅ Trend Analysis: Line chart showing case progression over time.
-✅ Statewise Comparison: Bar chart highlighting top-affected states.
-✅ KPI Metrics: Displays key COVID-19 statistics (Total Cases, Recoveries, Deaths, Active Cases).
+---
 
-📁 Dataset
-The dataset contains COVID-19 case statistics for Indian states, including:
+## 📌 Steps to Create a COVID-19 Dashboard
 
-State
-Date
-Confirmed Cases
-Recovered Cases
-Deaths
-Active Cases (Calculated: Confirmed - (Recovered + Deaths))
-Data Source: Reliable COVID-19 data providers (e.g., government sources, Kaggle, JHU).
+### 🔹 1. Data Collection & Preparation
+- 📥 **Download** a reliable dataset (**CSV, Excel**) containing **COVID-19 case statistics** (_cases, deaths, recoveries, etc._).
+- ✅ Ensure the dataset has relevant fields like **State, Date, Confirmed Cases, Recovered, Deaths, Active Cases**.
+- 🛠️ **Clean the dataset** using **Excel** or **Python (pandas)** if necessary.
 
-Format: CSV / Excel
+### 🔹 2. Connect Data to Tableau
+- 🖥️ **Open** **Tableau Desktop**.
+- 🔗 Click on **Connect** → **Text File** _(for CSV)_ or **Microsoft Excel**.
+- 📊 **Load** the COVID-19 dataset into Tableau.
 
-🚀 Steps to Create This Dashboard
-1️⃣ Data Collection & Preparation
-Obtain the latest COVID-19 dataset (CSV/Excel).
-Clean the data using Excel or Python (pandas) if needed.
-2️⃣ Connect Data to Tableau
-Open Tableau Desktop → Click "Connect" → Load CSV/Excel file.
-3️⃣ Data Exploration & Relationships
-Verify column names, data types, and missing values.
-Create calculated fields (e.g., Active Cases = Confirmed - (Recovered + Deaths)).
-4️⃣ Building Key Visualizations
-✅ Map Visualization (Statewise COVID Cases)
-Drag State onto the Tableau Canvas.
-Drag Confirmed Cases to Color & Size → Choose "Filled Map".
-📈 Line Chart (Trend Analysis)
-Drag Date to Columns, Confirmed Cases to Rows → Add State filter.
-📊 Bar Chart (Statewise Comparison)
-Drag State to Rows, Confirmed Cases to Columns → Sort in descending order.
-🔢 KPI Metrics (Total Cases, Recovered, Deaths, Active Cases)
-Create separate KPI cards for key metrics.
-5️⃣ Creating the Dashboard
-Click New Dashboard → Add all visualizations.
-Include Filters (State selection), Legends, Titles, & Tooltips.
-6️⃣ Publishing to Tableau Public
-Click "Server" → "Tableau Public" → "Save to Tableau Public".
-Share the public Tableau link.
+### 🔹 3. Data Exploration & Relationships
+- 🔍 **Verify** the data by checking **field names, data types, and missing values**.
+- ➕ **Create calculated fields** if necessary:  
+  ```diff
+  Active Cases = Confirmed - (Recovered + Deaths)
+  ```
+- 🔗 **Ensure proper relationships** (_Joins/Blends_) if multiple data sources are used.
+
+---
+
+## 📊 Building Key Visualizations
+
+### 🗺️ (i) Map Visualization for Statewise COVID Cases
+- 🌍 **Drag State** onto the Tableau Canvas.
+- 🎨 **Drag Confirmed Cases** to **Color** and **Size**.
+- 🏙️ Choose **Filled Map** to show the impact visually.
+
+### 📈 (ii) Line Chart for Trend Analysis
+- 📅 **Drag Date** to **Columns** and **Confirmed Cases** to **Rows**.
+- 🎯 **Add filters** for **State-wise Analysis**.
+- 🎨 **Format the chart** for clarity.
+
+### 📊 (iii) Bar Chart for Statewise Comparison
+- 📍 **Drag State** to **Rows** and **Confirmed Cases** to **Columns**.
+- 🔢 **Sort the states** in **descending order**.
+- 🌈 **Apply color gradients** for better readability.
+
+### 🔢 (iv) KPI Cards for Key Metrics
+- 📌 **Create separate KPI cards** for **Total Cases, Recovered, Deaths, Active Cases**.
+- 🧮 Use **SUM() functions** and **format numbers appropriately**.
+
+---
+
+## 🚀 Publishing to Tableau Public
+- 🌍 Click on **Server** → **Tableau Public** → **Save to Tableau Public**.
+
+---
+
+## 📌 Tableau Public Link
+🔗 Check out the published dashboard here:  
+👉 **[COVID-19 India Statewise Analysis](https://public.tableau.com/app/profile/subham.sinha/viz/covid19indiaanalysisstatewise/covid19indiastatewiseanalysis)**
+
+---
+
+## 👨‍💻 Author
+🔹 **Subham Sinha**  
+🔗 **LinkedIn:** [Profile](https://www.linkedin.com/in/saisubhamsinha/)  
+🔗 **GitHub:** [Profile](https://github.com/ss1031998)
 
